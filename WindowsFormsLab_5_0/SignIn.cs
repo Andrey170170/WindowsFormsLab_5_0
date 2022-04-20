@@ -52,8 +52,8 @@ namespace WindowsFormsLab_5_0
                             pr.Show();
                             return;
                         }
-                        MessageBox.Show($"Login or password are invalid");
                     }
+                    MessageBox.Show($"Login or password are invalid");
                 }
             }
             catch (Exception exception)
@@ -72,6 +72,11 @@ namespace WindowsFormsLab_5_0
             var f = new ForgotPass();
             this.Hide();
             f.Show();
+        }
+
+        private void SignIn_FormClosed(object sender, FormClosedEventArgs e)
+        {
+            Application.Exit();
         }
     }
 }

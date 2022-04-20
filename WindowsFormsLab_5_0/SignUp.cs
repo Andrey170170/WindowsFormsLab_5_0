@@ -46,20 +46,18 @@ namespace WindowsFormsLab_5_0
                         MyHash.GetHashString(Email_TB.Text), 
                         "User"));
                     db.SaveChanges();
+                    MessageBox.Show($"User {Login_TB.Text} registered successfully");
+                    var si = new SignIn();
+                    this.Hide();
+                    si.Show();
                 }
             }
             catch (Exception exception)
             {
                 MessageBox.Show(exception.Message);
+                return;
             }
-            finally
-            {
-                MessageBox.Show($"User {Login_TB} registered successfully");
-                var si = new SignIn();
-                this.Hide();
-                si.Show();
-            }
-           
+
         }
 
         private void Password_CB_CheckedChanged(object sender, EventArgs e)
@@ -70,6 +68,16 @@ namespace WindowsFormsLab_5_0
         private void Repeat_Pass_CB_CheckedChanged(object sender, EventArgs e)
         {
             Repeat_Pass_TB.UseSystemPasswordChar = Repeat_Pass_TB.UseSystemPasswordChar == false;
+        }
+
+        private void SignUp_Leave(object sender, EventArgs e)
+        {
+            Application.Exit();
+        }
+
+        private void SignUp_FormClosed(object sender, FormClosedEventArgs e)
+        {
+            Application.Exit();
         }
     }
 }

@@ -46,10 +46,11 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1727, 902);
+            this.ClientSize = new System.Drawing.Size(1711, 902);
             this.Controls.Add(this.pictureBox1);
             this.Name = "Profile";
             this.Text = "Profile";
+            this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.Profile_FormClosed);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
 

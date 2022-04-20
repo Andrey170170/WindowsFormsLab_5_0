@@ -146,6 +146,7 @@
             this.Controls.Add(this.label1);
             this.Name = "SignIn";
             this.Text = "Form1";
+            this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.SignIn_FormClosed);
             this.ResumeLayout(false);
             this.PerformLayout();
 

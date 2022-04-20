@@ -16,5 +16,10 @@ namespace WindowsFormsLab_5_0
         {
             InitializeComponent();
         }
+
+        private void Profile_FormClosed(object sender, FormClosedEventArgs e)
+        {
+            Application.Exit();
+        }
     }
 }

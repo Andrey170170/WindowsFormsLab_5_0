@@ -35,7 +35,7 @@
             // 
             // Forgot_B
             // 
-            this.Forgot_B.Location = new System.Drawing.Point(71, 89);
+            this.Forgot_B.Location = new System.Drawing.Point(76, 92);
             this.Forgot_B.Name = "Forgot_B";
             this.Forgot_B.Size = new System.Drawing.Size(123, 23);
             this.Forgot_B.TabIndex = 8;
@@ -70,6 +70,7 @@
             this.Controls.Add(this.Email_TB);
             this.Name = "ForgotPass";
             this.Text = "ForgotPass";
+            this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.ForgotPass_FormClosed);
             this.ResumeLayout(false);
             this.PerformLayout();
 

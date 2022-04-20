@@ -49,5 +49,10 @@ namespace WindowsFormsLab_5_0
             }
             
         }
+
+        private void ForgotPass_FormClosed(object sender, FormClosedEventArgs e)
+        {
+            Application.Exit();
+        }
     }
 }
